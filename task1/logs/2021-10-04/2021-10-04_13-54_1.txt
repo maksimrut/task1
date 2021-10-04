@@ -1,0 +1,4 @@
+2021-10-04 13:54:25 [main] [bubleSort] [31] INFO  rutkouski.task1.service.impl.ArraySortServiceImpl - The bubleSorted array: [I@1da2cb77
+2021-10-04 13:54:25 [main] [changeNegativeToPositive] [156] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The changed array with not negative numbers: 67 343 
+
+2021-10-04 13:54:25 [main] [findMaxValue] [49] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The maximum value is: 343

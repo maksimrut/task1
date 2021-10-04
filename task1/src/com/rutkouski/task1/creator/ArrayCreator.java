@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.rutkouski.task1.entity.CustomArray;
 
-public class Creator {
+public class ArrayCreator {
 	
 	public CustomArray createCustomArray(List<Integer> listInteger) {
 		

@@ -1,13 +1,13 @@
 package com.rutkouski.task1.parser.impl;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
-import com.rutkouski.task1.exception.ParserException;
+import com.rutkouski.task1.exception.IntArrayException;
 import com.rutkouski.task1.parser.StringToIntParser;
 import com.rutkouski.task1.validator.StringLineValidator;
 
@@ -15,24 +15,23 @@ public class StringToIntParserImpl implements StringToIntParser {
 	
 	static Logger logger = LogManager.getLogger();
 
+	public static final String DELIMITER_PATTERN = "\\s+";
+	
 	@Override
-	public List<Integer> parseToInt(List<String> listString) throws ParserException {
+	public List<Integer> parseToInt(List<String> listString) throws IntArrayException {
 	
 		StringLineValidator stringLineValidator = new StringLineValidator();
 		List<Integer> listInteger = new ArrayList<>();
-
-		if (!listString.isEmpty()) {
-
-			for (String line : listString) {
-				if (stringLineValidator.validate(line)) {
-					listInteger.add(Integer.parseInt(line));
-
-				} else {
-					logger.error("Failed validation");
-					throw new ParserException("Failed validation");
-				}
-			}
-		} 
+		
+		listString.stream().filter(s -> !listString.isEmpty())
+					.filter(s -> stringLineValidator.validateInt(s))
+					.flatMap(line -> Arrays.stream(line.split(DELIMITER_PATTERN)))
+					.forEach(lexeme -> listInteger.add(Integer.parseInt(lexeme)));
+			
+		if (listInteger.isEmpty()) {
+		logger.error("No valid line found in the data");
+		throw new IntArrayException("No valid line found in the data");
+		}
 		return listInteger;
 	}
 }

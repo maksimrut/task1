@@ -2,10 +2,10 @@ package com.rutkouski.task1.validator;
 
 public class StringLineValidator {
 	
-	private static final String DOUBLE_NUMBER_PATTERN = "-?\\d+";
+	private static final String INT_NUMBER_PATTERN = "^-?\\d+(\\s(-?\\d+))*$";
 	
-	public final boolean validate(String line) {
+	public final boolean validateInt(String lineOfNumbers) {
 		
-		return line != null? line.matches(DOUBLE_NUMBER_PATTERN) : false;
+		return lineOfNumbers != null? lineOfNumbers.matches(INT_NUMBER_PATTERN) : false;
 	}
 }

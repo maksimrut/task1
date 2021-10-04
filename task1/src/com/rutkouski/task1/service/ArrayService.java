@@ -12,7 +12,7 @@ public interface ArrayService {
 	
 	public double sumAll(CustomArray array);
 	
-	public int defineQuantityOfPositive(CustomArray array);
+	public long defineQuantityOfPositive(CustomArray array);
 	
-	public int defineQuantityOfNegative(CustomArray array);
+	public long defineQuantityOfNegative(CustomArray array);
 }

@@ -1,6 +1,5 @@
-2021-10-01 01:19:26 [main] [arraySortIntStream] [38] INFO  rutkouski.task1.service.impl.ArraySortServiceImpl - The sorted array (IntStream): [I@3f6b0be5
-2021-10-01 01:19:26 [main] [changeNegativeToPositive] [156] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The changed array with not negative numbers: CustomArray [array=[46, 32, 14, 34, 43, 234, 4356, 54436]]
-2021-10-01 01:19:26 [main] [findMaxValue] [49] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The maximum value is: 54436
-2021-10-01 01:19:36 [main] [bubleSort] [31] INFO  rutkouski.task1.service.impl.ArraySortServiceImpl - The bubleSorted array: [I@4229bb3f
-2021-10-01 01:19:36 [main] [changeNegativeToPositive] [156] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The changed array with not negative numbers: CustomArray [array=[46, 32, 14, 34, 43, 234, 4356, 54436]]
-2021-10-01 01:19:36 [main] [findMaxValue] [49] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The maximum value is: 54436
+2021-10-04 14:09:24 [main] [bubleSort] [31] INFO  rutkouski.task1.service.impl.ArraySortServiceImpl - The bubleSorted array: -42 34 67 343 
+
+2021-10-04 14:09:24 [main] [changeNegativeToPositive] [156] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The changed array with not negative numbers: 42 34 67 343 
+
+2021-10-04 14:09:24 [main] [findMaxValue] [49] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The maximum value is: 343

@@ -5,10 +5,9 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.rutkouski.task1.creator.Creator;
+import com.rutkouski.task1.creator.ArrayCreator;
 import com.rutkouski.task1.entity.CustomArray;
-import com.rutkouski.task1.exception.ParserException;
-import com.rutkouski.task1.exception.ReaderException;
+import com.rutkouski.task1.exception.IntArrayException;
 import com.rutkouski.task1.parser.impl.StringToIntParserImpl;
 import com.rutkouski.task1.reader.impl.LineFileReaderImpl;
 import com.rutkouski.task1.service.impl.ArrayServiceImpl;
@@ -24,7 +23,7 @@ public class Main {
 		
 		LineFileReaderImpl lineFileReaderImpl = new LineFileReaderImpl();
 		StringToIntParserImpl stringToIntParserImpl = new StringToIntParserImpl();
-		Creator creator = new Creator();
+		ArrayCreator creator = new ArrayCreator();
 		ArrayServiceImpl arrayServiceImpl = new ArrayServiceImpl();
 		ArraySortServiceImpl arraySortServiceImpl = new ArraySortServiceImpl();
 		
@@ -37,10 +36,8 @@ public class Main {
 			arrayServiceImpl.changeNegativeToPositive(customArray);
 			arrayServiceImpl.findMaxValue(customArray);
 			
-		} catch (ReaderException e) {
-			logger.error("ReaderException", e);
-		} catch (ParserException e) {
-			logger.error("ParserException", e);
+		} catch (IntArrayException e) {
+			logger.error("Reader or Parser Exception", e);
 		} 
 	}
 }

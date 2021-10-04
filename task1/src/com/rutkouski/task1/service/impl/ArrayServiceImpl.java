@@ -27,14 +27,6 @@ public class ArrayServiceImpl implements ArrayService {
 		return min;
 	}
 	
-	public int findMinValueIntStream(CustomArray array) {
-		
-		int[] tempArray = array.getArray();
-		int min = Arrays.stream(tempArray).min().getAsInt();
-		logger.info("The minimum (intStream) value is: " + min);
-		return min;
-	}
-
 	@Override
 	public int findMaxValue(CustomArray array) {
 		
@@ -50,14 +42,6 @@ public class ArrayServiceImpl implements ArrayService {
 		return max;
 	}
 
-public int findMaxValueIntStream(CustomArray array) {
-		
-		int[] tempArray = array.getArray();
-		int max = Arrays.stream(tempArray).max().getAsInt();
-		logger.info("The maximum (intStream) value is: " + max);
-		return max;
-	}
-	
 	@Override
 	public double defineAverageValue(CustomArray array) {
 		
@@ -67,14 +51,6 @@ public int findMaxValueIntStream(CustomArray array) {
 		return average;
 	}
 	
-	public double defineAverageValueIntStream(CustomArray array) {
-		
-		int[] tempArray = array.getArray();
-		double average = Arrays.stream(tempArray).average().getAsDouble();
-		logger.info("The average (intStream) value is: " + average);
-		return average;
-	}
-
 	@Override
 	public double sumAll(CustomArray array) {
 		
@@ -87,20 +63,12 @@ public int findMaxValueIntStream(CustomArray array) {
 		logger.info("The total sum is: " + sum);
 		return sum;
 	}
-	
-	public double sumAllIntStream(CustomArray array) {
-		
-		int[] tempArray = array.getArray();
-		int sum = Arrays.stream(tempArray).sum();
-		logger.info("The total sum (intStream) is: " + sum);
-		return sum;
-	}
 
 	@Override
-	public int defineQuantityOfPositive(CustomArray array) {
+	public long defineQuantityOfPositive(CustomArray array) {
 		
 		int[] tempArray = array.getArray();
-		int count = 0;
+		long count = 0;
 		
 		for (int i = 0; i < tempArray.length; i++) {
 			if (tempArray[i] > 0) {
@@ -110,20 +78,12 @@ public int findMaxValueIntStream(CustomArray array) {
 		logger.info("The positive numbers amount is: " + count);
 		return count;
 	}
-	
-	public long defineQuantityOfPositiveIntStream(CustomArray array) {
-		
-		int[] tempArray = array.getArray();
-		long count = Arrays.stream(tempArray).filter(n -> n > 0).count();
-		logger.info("The positive numbers amount (intStream) is: " + count);
-		return count;
-	}
 
 	@Override
-	public int defineQuantityOfNegative(CustomArray array) {
+	public long defineQuantityOfNegative(CustomArray array) {
 		
 		int[] tempArray = array.getArray();
-		int count = 0;
+		long count = 0;
 		
 		for (int i = 0; i < tempArray.length; i++) {
 			if (tempArray[i] < 0) {
@@ -131,14 +91,6 @@ public int findMaxValueIntStream(CustomArray array) {
 			}
 		}
 		logger.info("The negative numbers amount is: " + count);
-		return count;
-	}
-	
-	public long defineQuantityOfNegativeIntStream(CustomArray array) {
-		
-		int[] tempArray = array.getArray();
-		long count = Arrays.stream(tempArray).filter(n -> n < 0).count();
-		logger.info("The negative numbers amount (intStream) is: " + count);
 		return count;
 	}
 	
@@ -154,16 +106,6 @@ public int findMaxValueIntStream(CustomArray array) {
 		CustomArray customArray = new CustomArray(changedArray);
 		
 		logger.info("The changed array with not negative numbers: " + customArray.toString());
-		return customArray;
-	}
-	
-	public CustomArray changeNegativeToPositiveIntStream(CustomArray array) {
-		
-		int[] tempArray = array.getArray();
-		int[] changedArray = Arrays.stream(tempArray).peek(n -> Math.abs(n)).toArray();
-		
-		CustomArray customArray = new CustomArray(changedArray);
-		logger.info("The changed array (intStream) with not negative numbers: " + customArray.toString());
 		return customArray;
 	}
 }

@@ -28,14 +28,7 @@ public class ArraySortServiceImpl implements ArraySortService {
 			}
 		}
 		array.setArray(tempArray);
-		logger.info("The bubleSorted array: " + tempArray.toString());
-	}
-
-	public void arraySortIntStream(CustomArray array) {
-
-		int[] tempArray = Arrays.stream(array.getArray()).sorted().toArray();
-		array.setArray(tempArray);
-		logger.info("The sorted array (IntStream): " + tempArray.toString());
+		logger.info("The bubleSorted array: " + array.toString());
 	}
 
 	@Override
@@ -54,5 +47,12 @@ public class ArraySortServiceImpl implements ArraySortService {
 			tempArray[j + 1] = current;
 		}
 		logger.info("The insertionSorted array: " + tempArray.toString());
+	}
+	
+	public void arraySortIntStream(CustomArray array) {
+
+		int[] tempArray = Arrays.stream(array.getArray()).sorted().toArray();
+		array.setArray(tempArray);
+		logger.info("The sorted array (IntStream): " + tempArray.toString());
 	}
 }
