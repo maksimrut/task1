@@ -1,0 +1,5 @@
+2021-10-09 18:27:12 [main] [changeNegativeToPositive] [106] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The changed array with not negative numbers: 4 3 2 16 0 1 
+
+2021-10-09 18:27:12 [main] [sumAll] [61] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The total sum is: 18
+2021-10-09 18:27:12 [main] [defineAverageValue] [48] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The average value is: 3.0
+2021-10-09 18:27:12 [main] [findMinValue] [24] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The minimum value is: -3

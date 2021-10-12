@@ -1,0 +1,1 @@
+2021-10-11 20:42:19 [main] [parseToInt] [24] ERROR rutkouski.task1.parser.impl.StringToIntParserImpl - Strings list for parsing is null

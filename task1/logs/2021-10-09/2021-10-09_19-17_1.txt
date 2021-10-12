@@ -1,0 +1,2 @@
+2021-10-09 19:17:08 [main] [arraySortIntStream] [56] INFO  rutkouski.task1.service.impl.ArraySortServiceImpl - The sorted array (IntStream): [I@613a8ee1
+2021-10-09 19:17:42 [main] [arraySortIntStream] [56] INFO  rutkouski.task1.service.impl.ArraySortServiceImpl - The sorted array (IntStream): [I@6492fab5

@@ -1,0 +1,1 @@
+2021-10-09 19:18:44 [main] [arraySortIntStream] [56] INFO  rutkouski.task1.service.impl.ArraySortServiceImpl - The sorted array (IntStream): [I@72c28d64
