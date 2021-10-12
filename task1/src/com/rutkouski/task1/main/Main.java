@@ -37,7 +37,7 @@ public class Main {
 			arrayServiceImpl.findMaxValue(customArray);
 			
 		} catch (IntArrayException e) {
-			logger.error("Reader or Parser Exception", e);
+			logger.error("IntArrayException", e);
 		} 
 	}
 }

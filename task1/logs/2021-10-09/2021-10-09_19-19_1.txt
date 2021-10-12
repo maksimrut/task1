@@ -1,0 +1,3 @@
+2021-10-09 19:19:13 [main] [arraySortIntStream] [56] INFO  rutkouski.task1.service.impl.ArraySortServiceImpl - The sorted array (IntStream): [I@6492fab5
+2021-10-09 19:19:13 [main] [bubleSort] [31] INFO  rutkouski.task1.service.impl.ArraySortServiceImpl - The bubleSorted array: -3 -1 0 2 4 16 
+

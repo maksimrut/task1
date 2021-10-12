@@ -46,6 +46,29 @@ public class ArraySortServiceImpl implements ArraySortService {
 			}
 			tempArray[j + 1] = current;
 		}
+		array.setArray(tempArray);
+		logger.info("The insertionSorted array: " + tempArray.toString());
+	}
+	
+	public void selectionSort(CustomArray array) {
+		
+		int[] tempArray = array.getArray();
+		
+		for (int i = 0; i < tempArray.length; i++) {
+			int min = tempArray[i];
+			int minId = i;
+			
+			for (int j = i + 1; j < tempArray.length; j++) {
+				if (tempArray[j] < min) {
+					min = tempArray[j];
+					minId = j;
+				}
+			}
+			int temp = tempArray[i];
+			tempArray[i] = min;
+			tempArray[minId] = temp;
+		}
+		array.setArray(tempArray);
 		logger.info("The insertionSorted array: " + tempArray.toString());
 	}
 	

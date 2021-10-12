@@ -21,8 +21,8 @@ public class LineFileReaderImpl implements LineFileReader {
 		
 		if (filePath == null || Files.notExists(Paths.get(filePath)) 
 				|| filePath.length() == 0) {
-			logger.error("File is not found ");
-			throw new IntArrayException("File is not found");
+			logger.error("File is not found " + filePath);
+			throw new IntArrayException("File is not found " + filePath);
 		}
 
 		List<String> stringLines;

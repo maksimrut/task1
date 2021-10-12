@@ -7,4 +7,6 @@ public interface ArraySortService {
 	public void bubleSort(CustomArray array);
 	
 	public void insertionSort(CustomArray array);
+	
+	public void selectionSort(CustomArray array);
 }

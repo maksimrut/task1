@@ -6,15 +6,15 @@ public class IntArrayException extends Exception {
 		super();
 	}
 
-	public IntArrayException(String message, Exception e) {
-		super(message, e);
+	public IntArrayException(String message, Throwable cause) {
+		super(message, cause);
 	}
 
 	public IntArrayException(String message) {
 		super(message);
 	}
 
-	public IntArrayException(Exception e) {
-		super(e);
+	public IntArrayException(Throwable cause) {
+		super(cause);
 	}
 }

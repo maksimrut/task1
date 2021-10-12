@@ -1,7 +1,5 @@
 package com.rutkouski.task1.service.impl;
 
-import java.util.Arrays;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

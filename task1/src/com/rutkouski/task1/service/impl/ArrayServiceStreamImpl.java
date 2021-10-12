@@ -82,7 +82,7 @@ public class ArrayServiceStreamImpl implements ArrayService {
 		
 		int[] tempArray = array.getArray();
 		
-		int[] changedArray = Arrays.stream(tempArray).peek(n -> Math.abs(n)).toArray();
+		int[] changedArray = Arrays.stream(tempArray).map(n -> Math.abs(n)).toArray();
 		
 		CustomArray customArray = new CustomArray(changedArray);
 		logger.info("The changed array (intStream) with not negative numbers: " + customArray.toString());

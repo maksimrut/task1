@@ -1,0 +1,8 @@
+2021-10-09 19:05:27 [main] [changeNegativeToPositiveIntStream] [88] INFO  rutkouski.task1.service.impl.ArrayServiceStreamImpl - The changed array (intStream) with not negative numbers: 4 3 2 16 0 1 
+
+2021-10-09 19:05:27 [main] [defineAverageValue] [44] INFO  rutkouski.task1.service.impl.ArrayServiceStreamImpl - The average (intStream) value is: 3.0
+2021-10-09 19:05:27 [main] [defineQuantityOfNegative] [77] INFO  rutkouski.task1.service.impl.ArrayServiceStreamImpl - The negative numbers amount (intStream) is: 2
+2021-10-09 19:05:27 [main] [defineQuantityOfPositive] [66] INFO  rutkouski.task1.service.impl.ArrayServiceStreamImpl - The positive numbers amount (intStream) is: 3
+2021-10-09 19:05:27 [main] [findMaxValue] [33] INFO  rutkouski.task1.service.impl.ArrayServiceStreamImpl - The maximum (intStream) value is: 16
+2021-10-09 19:05:27 [main] [findMinValue] [22] INFO  rutkouski.task1.service.impl.ArrayServiceStreamImpl - The minimum (intStream) value is: -3
+2021-10-09 19:05:27 [main] [sumAll] [55] INFO  rutkouski.task1.service.impl.ArrayServiceStreamImpl - The total sum (intStream) is: 18

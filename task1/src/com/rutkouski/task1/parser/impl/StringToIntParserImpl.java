@@ -19,19 +19,19 @@ public class StringToIntParserImpl implements StringToIntParser {
 	
 	@Override
 	public List<Integer> parseToInt(List<String> listString) throws IntArrayException {
+		
+		if (listString == null) {
+			logger.error("Strings list for parsing is null");
+			throw new IntArrayException("Strings list for parsing is null");
+		}
 	
-		StringLineValidator stringLineValidator = new StringLineValidator();
 		List<Integer> listInteger = new ArrayList<>();
 		
 		listString.stream().filter(s -> !listString.isEmpty())
-					.filter(s -> stringLineValidator.validateInt(s))
+					.filter(s -> StringLineValidator.validateInt(s))
 					.flatMap(line -> Arrays.stream(line.split(DELIMITER_PATTERN)))
 					.forEach(lexeme -> listInteger.add(Integer.parseInt(lexeme)));
 			
-		if (listInteger.isEmpty()) {
-		logger.error("No valid line found in the data");
-		throw new IntArrayException("No valid line found in the data");
-		}
 		return listInteger;
 	}
 }
