@@ -1,9 +1,0 @@
-2021-10-09 18:33:57 [main] [changeNegativeToPositive] [106] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The changed array with not negative numbers: 4 3 2 16 0 1 
-
-2021-10-09 18:33:57 [main] [sumAll] [61] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The total sum is: 18
-2021-10-09 18:33:57 [main] [defineAverageValue] [48] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The average value is: 3.0
-2021-10-09 18:33:57 [main] [defineQuantityOfNegative] [91] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The negative numbers amount is: 2
-2021-10-09 18:33:57 [main] [defineQuantityOfPositive] [76] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The positive numbers amount is: 3
-2021-10-09 18:33:57 [main] [findMaxValue] [39] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The maximum value is: 16
-2021-10-09 18:33:57 [main] [findMinValue] [24] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The minimum value is: -3
-2021-10-09 18:33:57 [main] [sumAll] [61] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The total sum is: 18
