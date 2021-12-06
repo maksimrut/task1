@@ -1,9 +1,0 @@
-2021-10-09 17:34:28 [main] [changeNegativeToPositive] [106] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The changed array with not negative numbers: 4 3 2 16 0 1 
-
-2021-10-09 17:34:28 [main] [findMinValue] [24] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The minimum value is: -3
-2021-10-09 17:34:48 [main] [changeNegativeToPositive] [106] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The changed array with not negative numbers: 4 3 2 16 0 1 
-
-2021-10-09 17:34:48 [main] [findMinValue] [24] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The minimum value is: -3
-2021-10-09 17:34:58 [main] [changeNegativeToPositive] [106] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The changed array with not negative numbers: 4 3 2 16 0 1 
-
-2021-10-09 17:34:58 [main] [findMinValue] [24] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The minimum value is: -3
