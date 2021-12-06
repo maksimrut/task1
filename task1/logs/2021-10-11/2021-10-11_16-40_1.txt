@@ -1,5 +1,0 @@
-2021-10-11 16:40:53 [main] [arraySortIntStream] [79] INFO  rutkouski.task1.service.impl.ArraySortServiceImpl - The sorted array (IntStream): [I@d3957fe
-2021-10-11 16:40:53 [main] [bubleSort] [31] INFO  rutkouski.task1.service.impl.ArraySortServiceImpl - The bubleSorted array: -3 -1 0 2 4 16 
-
-2021-10-11 16:40:53 [main] [insertionSort] [50] INFO  rutkouski.task1.service.impl.ArraySortServiceImpl - The insertionSorted array: [I@5c08c46a
-2021-10-11 16:40:53 [main] [selectionSort] [72] INFO  rutkouski.task1.service.impl.ArraySortServiceImpl - The insertionSorted array: [I@5829e4f4
