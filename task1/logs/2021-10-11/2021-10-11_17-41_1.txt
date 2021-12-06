@@ -1,4 +1,0 @@
-2021-10-11 17:41:03 [main] [readFileLines] [24] ERROR rutkouski.task1.reader.impl.LineFileReaderImpl - File is not found filesTest\test3.txt
-2021-10-11 17:41:03 [main] [readFileLines] [24] ERROR rutkouski.task1.reader.impl.LineFileReaderImpl - File is not found null
-2021-10-11 17:41:36 [main] [readFileLines] [24] ERROR rutkouski.task1.reader.impl.LineFileReaderImpl - File is not found filesTest\test3.txt
-2021-10-11 17:41:36 [main] [readFileLines] [24] ERROR rutkouski.task1.reader.impl.LineFileReaderImpl - File is not found null
