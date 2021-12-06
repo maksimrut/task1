@@ -1,1 +1,0 @@
-2021-10-09 12:51:29 [main] [findMinValue] [24] INFO  rutkouski.task1.service.impl.ArrayServiceImpl - The minimum value is: -3
